@@ -23,25 +23,25 @@
         <div class="border-right" id="sidebar-wrapper">
           <div class="sidebar-heading text-center">
             <img src="/images/logo.svg" class="my-4" alt="">
-            <p>User Dashboard</p>
+            <p>Admin Dashboard</p>
           </div>
           <div class="list-group list-group-flush">
-            <a href="{{ route("dashboard") }}" class="list-group-item list-group-item-action active">
+            <a href="{{ route("admin-dashboard") }}" class="list-group-item list-group-item-action active">
               Dashboard
             </a>
-            <a href="{{ route("dashboard-product") }}" class="list-group-item list-group-item-action  ">
-              My Products
+            <a href="" class="list-group-item list-group-item-action  ">
+              Products
             </a>
-            <a href="{{ route("dashboard-product-transactions") }}" class="list-group-item list-group-item-action  ">
+            <a href="" class="list-group-item list-group-item-action  ">
+              Categories
+            </a>
+            <a href="" class="list-group-item list-group-item-action  ">
               Transactions
             </a>
-            <a href="{{ route("dashboard-settings-store") }}" class="list-group-item list-group-item-action  ">
-              Store settings
+            <a href="" class="list-group-item list-group-item-action  ">
+              Users
             </a>
-            <a href="{{ route("dashboard-settings-account") }}" class="list-group-item list-group-item-action  ">
-              My Accounts
-            </a>
-            <a href="{{ route("home") }}" class="list-group-item list-group-item-action  ">
+            <a href="" class="list-group-item list-group-item-action  ">
               Sign Out
             </a>
           </div>
@@ -67,18 +67,8 @@
                      Hi, Susi
                    </a>
                    <div class="dropdown-menu">
-                     <a href="{{ route('dashboard') }}" class="dropdown-item">Dashboard</a>
-                     <a href="{{ route('dashboard-settings-account') }}" class="dropdown-item">Settings</a>
-                     <div class="dropdown-divider"></div>
-                     <a href="#" class="dropdown-item">Logout</a>
+                     <a href="{{ route('home') }}" class="dropdown-item">Logout</a>
                    </div>
-                  </li>
-      
-                  <li class="nav-item">
-                   <a href="#" class="nav-link d-inline-block mt-2">
-                     <img src="/images/filledcart.svg" alt="">
-                     <div class="card-badge">4</div>
-                   </a>
                   </li>
                  </ul>
       
