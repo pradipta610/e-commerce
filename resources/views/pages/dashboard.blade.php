@@ -30,7 +30,7 @@
                 <div class="card mb-2">
                   <div class="card-body">
                     <div class="dashboard-card-title">
-                      Customer
+                      Revenue
                     </div>
                     <div class="dashboard-card-subtitle">
                       15,353
@@ -43,7 +43,7 @@
                 <div class="card mb-2">
                   <div class="card-body">
                     <div class="dashboard-card-title">
-                      Customer
+                      Transactions
                     </div>
                     <div class="dashboard-card-subtitle">
                       15,353

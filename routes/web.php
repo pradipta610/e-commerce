@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\DashboardController;
 use Illuminate\Support\Facades\Route;
 
@@ -32,9 +33,14 @@ Route::get('/dashboard/account', [App\Http\Controllers\DashboardSettingControlle
 
 
 Route::prefix('admin')
-    ->namespace('Admin')
     ->group(function(){
-       Route::get('/',[DashboardController::class,'index'])->name('admin-dashboard');
+       Route::get('/dashboard',[DashboardController::class,'index'])->name('admin-dashboard');
+       Route::resource('category',CategoryController::class)->names([
+        'index' => 'ShowCategory',
+        'create' => 'CreateCategory',
+        'edit' => 'EditCategory',
+        'destroy' => 'DeleteCategory'
+    ]);
     });
 Auth::routes();
 
